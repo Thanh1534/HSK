@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>中文考试成绩在线验证结果查询 - 模板</title>
+  <style>
+    :root{--border:#e6e6e6;--muted:#777;--accent:#2a9fd6}
+    body{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#f7f7f7; margin:24px}
+    .wrap{max-width:1150px;margin:0 auto;background:#fff;border:1px solid var(--border);box-shadow:0 1px 0 rgba(0,0,0,0.02)}
+    header{padding:30px 40px;text-align:center}
+    header h1{margin:0;font-size:28px;font-weight:500}
+    header p{margin:6px 0 0;color:var(--muted)}
+
+    .panel{padding:18px 24px;border-top:1px solid var(--border)}
+    .section-title{background:#fbfbfb;padding:12px 16px;border:1px solid var(--border);border-radius:4px;margin:18px 0;font-weight:600;color:var(--muted)}
+
+    .info-grid{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+    .info-box{border:1px solid var(--border);padding:0;background:#fff}
+    table{width:100%;border-collapse:collapse}
+    td,th{padding:14px 18px;border-bottom:1px solid var(--border);vertical-align:middle}
+    td.label{width:200px;background:#fafafa;color:var(--muted);font-weight:600}
+    .photo{padding:18px;display:flex;align-items:center;justify-content:center}
+    .photo img{width:160px;height:200px;object-fit:cover;border:6px solid #ffffff;box-shadow:0 1px 2px rgba(0,0,0,0.05)}
+
+    .scores{margin-top:18px;border:1px solid var(--border)}
+    .scores thead th{background:#fafafa;padding:12px 18px;border-bottom:1px solid var(--border);font-weight:700}
+    .scores tbody td{padding:22px 18px;text-align:center;font-size:18px}
+
+    .small-muted{text-align:center;color:var(--muted);padding:10px;font-size:12px}
+
+    /* Responsive */
+    @media (max-width:820px){
+      .info-grid{grid-template-columns:1fr;}
+      td.label{width:140px}
+      .photo img{width:140px;height:180px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>中文考试成绩在线验证结果查询</h1>
+      <p>汉考国际教育科技（北京）有限公司（CTI）</p>
+    </header>
+
+    <div class="panel">
+      <div class="section-title">考生信息</div>
+
+      <div class="info-grid">
+        <!-- left: details -->
+        <div class="info-box">
+          <table>
+            <tr><td class="label">证件姓名</td><td>NGUYEN QUANG THANH</td></tr>
+            <tr><td class="label">中文姓名</td><td>阮光成</td></tr>
+            <tr><td class="label">国籍</td><td>越南</td></tr>
+            <tr><td class="label">性别</td><td>男</td></tr>
+          </table>
+
+          <div class="section-title" style="margin-top:18px">考试信息</div>
+          <table>
+            <tr><td class="label">考点名称</td><td>越南联华教育发展有限责任公司（网考）-北宁</td></tr>
+            <tr><td class="label">准考证号</td><td>H51916850100200894</td></tr>
+            <tr><td class="label">证书编号</td><td>H51911072241</td></tr>
+            <tr><td class="label">考试类型</td><td>HSK五级</td></tr>
+            <tr><td class="label">考试时间</td><td>2020-10-20</td></tr>
+          </table>
+        </div>
+
+        <!-- right: photo -->
+        <div class="photo info-box">
+          <!-- update the src to your image path -->
+          <img src="images/download.png" alt="photo">
+        </div>
+      </div>
+
+      <!-- scores table -->
+      <div class="section-title">HSK五级(2020-10-20)中文水平考试</div>
+      <table class="scores">
+        <thead>
+          <tr>
+            <th>听力</th>
+            <th>阅读</th>
+            <th>写作</th>
+            <th>总分</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>82</td>
+            <td>71</td>
+            <td>82</td>
+            <td>235</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="small-muted">最终解释权归汉考国际所有</div>
+    </div>
+  </div>
+</body>
+</html>
